@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de investimento</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de investimento</h1>
+        
+        <form id="investment-form">
+            <label for="valor"> Valor inicial:</label>
+            <input type="number" name="valor" id="initial-amount" required>
+
+            <label for="taxa">Taxa de juros mensal:</label>
+            <input type="number" id="interest-rate" step="0.01" required>
+
+            <label for="periodo">Período (anos):</label>
+            <input type="number" name="periodo" id="years" required>
+
+            <button type="submit">Calcular</button>
+
+        </form>
+
+        <h2>Resultado do investimento: </h2>
+        <p id="result"></p>
+
+    </div>
+
+    <script src="script.js"></script>   
+</body>
+</html>
